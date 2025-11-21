@@ -22,7 +22,7 @@ jobs:
         sudo apt-get install wget unzip
         wget https://github.com/subframe7536/maple-font/releases/download/v7.8/MapleMono-NF-unhinted.zip
         unzip -d font MapleMono-NF-unhinted.zip
-        sudo mv *.ttf /usr/local/share/fonts/
+        find font -name "*.ttf" -exec cp {} /usr/local/share/fonts/ \;
 
     - name: Build pdfs
       run: |
