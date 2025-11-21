@@ -13,26 +13,24 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 22
+        node-version: 22w
     - name: Install Marp CLI
       run: npm install -g @marp-team/marp-cli
     - name: Build pdfs
       run: |
         mkdir pdfs
         find ./slides -name "*.md" -exec sh -c 'echo "marp {} -o ./pdfs/{.}.pdf"' \;
-        zip -r pdf.zip pdfs
     - name: Build pptxs
       run: |
         mkdir pptxs
         find ./slides -name "*.md" -exec sh -c 'echo "marp {} -o ./pptxs/{.}.pptx"' \;
-        zip -r pptx.zip pptxs
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
-        name: pdf
+        name: pdfs
         path: pdf.zip
     - name: Upload pptx artifact
       uses: actions/upload-artifact@v4
       with:
-        name: pptx
+        name: pptxs
         path: pptx.zip
