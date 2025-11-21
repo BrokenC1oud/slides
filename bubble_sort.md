@@ -70,4 +70,4 @@ void bubble_sort(int arr[], int n) {
 
 - [Learn Bubble Sort in 7 minutes :diving_mask:](https://www.youtube.com/watch?v=Dv4qLJcxus8) by BroCodez @ Youtube
 - [Bubble Sort](https://www.youtube.com/watch?v=Cq7SMsQBEUw&list=RDCq7SMsQBEUw) by TimoBingmann @ Youtube
-- [Bubble sort animation](https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif) from Wikipedia
+- [Bubble sort animation showing why it's bubble](https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif) from Wikipedia
