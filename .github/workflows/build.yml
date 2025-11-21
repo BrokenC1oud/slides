@@ -18,8 +18,8 @@ jobs:
       run: npm install -g @marp-team/marp-cli
     - name: Get font
       run: |
-        apt-get update
-        apt-get install wget unzip
+        sudo apt-get update
+        sudo apt-get install wget unzip
         wget https://github.com/subframe7536/maple-font/releases/download/v7.8/MapleMono-NF-unhinted.zip
         unzip -d font MapleMono-NF-unhinted.zip
         cp *.ttf /usr/local/share/fonts/
@@ -32,7 +32,6 @@ jobs:
       run: |
         mkdir pptxs
         find ./slides -name "*.md" -exec sh -c 'marp {} -o ./pptxs/$(basename {} .md).pptx' \;
-        ls pptxs
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
