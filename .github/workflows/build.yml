@@ -27,10 +27,10 @@ jobs:
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
-        name: pdfs
-        path: pdf.zip
+        name: pdf.zip
+        path: pdfs
     - name: Upload pptx artifact
       uses: actions/upload-artifact@v4
       with:
-        name: pptxs
-        path: pptx.zip
+        name: pptx.zip
+        path: pptxs
