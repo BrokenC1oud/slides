@@ -4,6 +4,11 @@ paginate: true
 backgroundColor: #fff
 marp: true
 math: mathjax
+style: |
+  :root {
+    font-family: "Maple Mono NF CN";
+    font-feature-settings: "liga" 1, "calt" 1
+  }
 ---
 
 # 冒泡排序

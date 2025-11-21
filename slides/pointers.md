@@ -3,6 +3,11 @@ theme: gaia
 paginate: true
 backgroundColor: #fff
 marp: true
+style: |
+  :root {
+    font-family: "Maple Mono NF CN";
+    font-feature-settings: "liga" 1, "calt" 1
+  }
 ---
 
 ## 指针 Pointers
@@ -11,10 +16,6 @@ marp: true
 table {
     table-layout: fixed;
     width: 100%;
-}
-
-img {
-    mix-blend-mode: ;
 }
 </style>
 

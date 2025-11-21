@@ -16,6 +16,14 @@ jobs:
         node-version: 22
     - name: Install Marp CLI
       run: npm install -g @marp-team/marp-cli
+    - name: Get font
+      run: |
+        apt-get update
+        apt-get install wget unzip
+        wget https://github.com/subframe7536/maple-font/releases/download/v7.8/MapleMono-NF-unhinted.zip
+        unzip -d font MapleMono-NF-unhinted.zip
+        cp *.ttf /usr/local/share/fonts/
+
     - name: Build pdfs
       run: |
         mkdir pdfs
