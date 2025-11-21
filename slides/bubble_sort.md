@@ -25,11 +25,11 @@ math: mathjax
 - 时间复杂度：$O(n^2)$
 - 空间复杂度：$O(1)$
 
-![bg left:33% height:715px](images/bubble_sort/image.png)
+![bg left:33% height:715px](../images/bubble_sort/image.png)
 
 ---
 
-![bg left width:600px](images/bubble_sort/image-1.png)
+![bg left width:600px](../images/bubble_sort/image-1.png)
 
 0. 待排序的数组 $arr[n]\vert_{n=5}$
 1. $arr[0] > arr[1] \to \text{swap}$

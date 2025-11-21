@@ -22,7 +22,7 @@ img {
 
 ||||
 |:---:|:---:|:---:|
-|![height:300px](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Pointers.svg/396px-Pointers.svg.png)|![height:300px](./images/pointers/image.png)|![height:300px](images/pointers/image-1.png)|
+|![height:300px](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Pointers.svg/396px-Pointers.svg.png)|![height:300px](../images/pointers/image.png)|![height:300px](../images/pointers/image-1.png)|
 
 ---
 
@@ -60,8 +60,8 @@ int main() {
 
 ## 程序演示
 
-![height:200px](images/pointers/image-2.png)
-![height:300px](images/pointers/image-4.png)
+![height:200px](../images/pointers/image-2.png)
+![height:300px](../images/pointers/image-4.png)
 
 ---
 
@@ -137,7 +137,7 @@ int main() {
 
 ## 关于数组与指针
 
-![](images/pointers/image-3.png)
+![](../images/pointers/image-3.png)
 
 ---
 
