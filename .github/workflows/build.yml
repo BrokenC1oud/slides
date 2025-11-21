@@ -19,11 +19,11 @@ jobs:
     - name: Build pdfs
       run: |
         mkdir pdfs
-        find ./slides -name "*.md" -exec sh -c 'echo "marp {} -o ./pdfs/$(basename {} .md).pdf"' \;
+        find ./slides -name "*.md" -exec sh -c 'marp {} -o ./pdfs/$(basename {} .md).pdf' \;
     - name: Build pptxs
       run: |
         mkdir pptxs
-        find ./slides -name "*.md" -exec sh -c 'echo "marp {} -o ./pptxs/$(basename {} .md).pptx"' \;
+        find ./slides -name "*.md" -exec sh -c 'marp {} -o ./pptxs/$(basename {} .md).pptx' \;
         ls pptxs
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
